@@ -14,14 +14,15 @@ header.masthead {
     top: 50%;
     left: 50%;
     height: 100%;
-width: 177.77777778vh; /* 100 * 16 / 9 */
-min-width: 100%;
-min-height: 56.25vw; /* 100 * 9 / 16 */
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
     z-index: 0;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
+
   }
 
 
