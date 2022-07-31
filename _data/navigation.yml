@@ -1,0 +1,14 @@
+
+de: &DEFAULT_DE
+
+  nav:
+    - title: "<b>WORK</b> Beer"
+      section: Leistungen
+    - title: "<b>CRAFT</b> Beer"
+      section: Geschichte
+    - title: "Vertriebspartner"
+      section: Ueber
+    - title: "Bestellen"
+      section: Portfolio
+    - title: "Kontakt"
+      section: Kontakt
