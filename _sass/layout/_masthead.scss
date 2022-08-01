@@ -25,6 +25,17 @@ header.masthead {
 
   }
 
+  @media (max-width: 991px) {
+    header.masthead {
+      .header-video {
+        position: absolute;
+        top: 35%;
+        min-width: 130%;
+        width: 70%;
+      }
+    }
+  }
+
   @media (max-width: 768px) {
     header.masthead {
       .intro-text {
@@ -38,16 +49,63 @@ header.masthead {
         min-width: 100%;
         min-height: 100%;
         width: 50%;
-        height: auto;
-        z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
       }
     }
   }
 
+  @media (max-width: 630px) {
+header.masthead {
+      .header-video {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        min-width: 111%;
+        min-height: 100%;
+        width: 50%;
+      }
+    }
+}
+    @media (max-width: 576px) {
+header.masthead {
+        .header-video {
+          position: absolute;
+          top: 30%;
+          left: 50%;
+          min-width: 120%;
+          min-height: 100%;
+          width: 50%;
+        }
+      }
+}
+@media (max-width: 486px) {
+header.masthead {
+    .header-video {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      min-width: 130%;
+      min-height: 100%;
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: 330px) {
+header.masthead {
+    .header-video {
+      top: 23%;
+      min-width: 140%;
+      min-height: 100%;
+    }
+  }
+}
+@media (max-width: 330px) {
+header.masthead {
+    .header-video {
+      top: 20%;
+    }
+  }
+}
 
 @media (min-width: 768px) {
   header.masthead {
