@@ -1,7 +1,7 @@
 url    : "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 
-title      : Brauerei zur Goldene Gans
+title      : Brauerei Goldene Gans
 email      : brauerei@goldene-gans.de #this is also the email contact forms will go to
 description: "Site description"
 author     : Fritz Dürrwanger
