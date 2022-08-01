@@ -3,12 +3,12 @@ de: &DEFAULT_DE
 
   nav:
     - title: "<b>WORK</b> Beer"
-      section: Leistungen
+      section: work-beer
     - title: "<b>CRAFT</b> Beer"
-      section: Geschichte
+      section: craft-beer
     - title: "Vertriebspartner"
-      section: Ueber
+      section: vertriebspartner
     - title: "Bestellen"
-      section: Portfolio
+      section: bestellen
     - title: "Kontakt"
-      section: Kontakt
+      section: kontakt

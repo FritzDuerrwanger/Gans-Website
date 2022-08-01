@@ -17,30 +17,13 @@ de: &DEFAULT_DE
     #text: assets\img\Home-Goldene-Gans-1.png
 
   services:
-    title: "Leistungen"
-    text: "Was wir anbieten."
-    section: Leistungen
-    list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://de.wikipedia.org/wiki/Markdown)"
-        desc: "Hier können Sie etwas mit **Markdown** einfügen."
-        icon: fab fa-markdown
+    section: work-beer
 
   portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: Portfolio
-    closebutton: "Schließen"
+    section: bestellen
 
   timeline:
-    title: "Geschichte"
-    text: "Lorem ipsum timeline"
-    section: Geschichte
+    section: craft-beer
     # left is the default
     #start_align: "left"
     events:
@@ -69,10 +52,7 @@ de: &DEFAULT_DE
     end: "Seien Sie <br> Teil unserer <br> Geschichte!"
 
   about:
-    title: "Über uns"
-    text: "Unsere Geschichte."
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: Ueber
+    section: vertriebspartner
 
   clients:
     section: Kunden
@@ -132,7 +112,7 @@ de: &DEFAULT_DE
   contact:
     title: "Kontakt"
     text: ""
-    section: Kontakt
+    section: kontakt
     name: "Vorname*"
     name-validation: "Geben Sie ihren Vornamen ein."
     email: "Name*"

@@ -10,7 +10,7 @@
   <meta name="author" content="Your Name">
   <link rel="canonical" href="http://localhost:4000/">
 
-  <title>Goldene Gans</title>
+  <title>Startseite | Goldene Gans</title>
 
   <!-- Bootstrap core CSS -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
@@ -33,33 +33,26 @@
 
   <body id="page-top">
 
-      <link rel="stylesheet" href="assets/css/animate.css">
-
-<script src="assets/js/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>
-
-  <!-- Navigation -->
+        <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
 	  <a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="animate__animated animate__menubutton"height="70" src="assets\img\logo.png"/></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse animate__animated animate__fadeIn animate__delay-1s" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
         
         
-          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#Leistungen"><b>WORK</b> Beer</a></li>
+          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#work-beer"><b>WORK</b> Beer</a></li>
         
-          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#Geschichte"><b>CRAFT</b> Beer</a></li>
+          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#craft-beer"><b>CRAFT</b> Beer</a></li>
         
-          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#Ueber">Vertriebspartner</a></li>
+          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#vertriebspartner">Vertriebspartner</a></li>
         
-          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#Portfolio">Bestellen</a></li>
+          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#bestellen">Bestellen</a></li>
         
-          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#Kontakt">Kontakt</a></li>
+          <li class="nav-item animate__animated animate__menubutton"><a class="nav-link js-scroll-trigger" href="#kontakt">Kontakt</a></li>
         
         
         </ul>
@@ -83,7 +76,7 @@ new WOW().init();
 
 <!-- Services -->
 
-  <section class="page-section" id="Leistungen">
+  <section class="page-section" id="work-beer">
     <div class="container">
       <center><img class="wow animate__animated animate__zoomIn" width="60%" src="assets/img/work-3000-pix.png" alt=""></center>
       <br>
@@ -95,7 +88,7 @@ new WOW().init();
 
 <!-- About -->
 
-  <section class="bg-light page-section" id="Geschichte">
+  <section class="bg-light page-section" id="craft-beer">
     <div class="container">
       <center><img class="wow animate__animated animate__zoomIn" width="55%" src="assets/img/Button-CRAFT-Neu-2022-3.png" alt=""></center>
       <br>
@@ -107,7 +100,7 @@ new WOW().init();
 
 <!-- About -->
 
-<section class="page-section" id="Ueber">
+<section class="page-section" id="vertriebspartner">
   <center><div class="container">
     <div class="elementor-widget-container wow animate__animated animate__zoomIn">
 
@@ -175,7 +168,7 @@ new WOW().init();
 
 <!-- Portfolio Grid -->
 
-<section class="bg-light page-section" id="Portfolio">
+<section class="bg-light page-section" id="bestellen">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -234,7 +227,7 @@ new WOW().init();
                 type="button"
               >
                 <i class="fas fa-times"></i>
-                Schließen
+                Close Project
               </button>
             </div>
           </div>
@@ -286,7 +279,7 @@ new WOW().init();
                 type="button"
               >
                 <i class="fas fa-times"></i>
-                Schließen
+                Close Project
               </button>
             </div>
           </div>
@@ -302,7 +295,7 @@ new WOW().init();
 
 <!-- Contact -->
 
-<section class="page-section" id="Kontakt">
+<section class="page-section" id="kontakt">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
@@ -313,40 +306,34 @@ new WOW().init();
     <div class="row">
       <div class="col-lg-12">
         <form id="contactForm"
-          action="https://formspree.io/your-email@example.com" method="POST">
+          action="https://formsubmit.co/f.duerrwanger.de" method="POST">
           <!--name="sentMessage"-->
           <div class="row">
             <div class="col-md-6">
               <div class="form-group">
-                <input name="name" class="form-control" id="name" type="text"
+                <input name="Vorname" class="form-control" id="name" type="text"
                   placeholder="Vorname*"
                   required="required" data-validation-required-message="Geben Sie ihren Vornamen ein.">
                 <p class="help-block text-danger"></p>
               </div>
-              <div class="form-group">
-                <input name="_replyto" class="form-control" id="phone" type="email"
-                  placeholder="E-Mail-Adresse*"
-                  required="required" data-validation-required-message="Geben Sie Ihre E-Mail-Adresse ein.">
 
-              </div>
             </div>
             <div class="col-md-6">
               <div class="form-group">
-                <input name="vorname" class="form-control" id="email" type="text"
+                <input name="Name" class="form-control" id="name" type="text"
                   placeholder="Name*"
                   required="required" data-validation-required-message="Geben Sie Ihren Namen ein.">
                 <p class="help-block text-danger"></p>
               </div>
-              <div class="form-group">
-              <select class="form-select" aria-label="Default select example">
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
+
               </div>
               <div class="col-lg-12 text-center">
+                <div class="form-group">
+                  <input name="_replyto" class="form-control" id="email" type="email"
+                    placeholder="E-Mail-Adresse*"
+                    required="required" data-validation-required-message="Geben Sie Ihre E-Mail-Adresse ein.">
+
+                </div>
               <div class="form-group">
                 <textarea name="message" class="form-control" id="message"
                   placeholder="Nachricht*"
@@ -387,10 +374,12 @@ new WOW().init();
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
-            <a href="legal"
-              >Datenschutzerklärung</a
+            <a href="impressum"
+              >Impressum</a
             >
           </li>
+          <li class="list-inline-item">
+          <a href="datenschutzerklaerung">Datenschutzerklärung</a></li>
         </ul>
       </div>
     </div>
@@ -417,6 +406,13 @@ new WOW().init();
 
 	  <!-- Custom scripts for this template -->
 	  <script src="assets/js/agency.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+    new WOW().init();
+    </script>
 
   </body>
 </html>
