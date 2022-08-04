@@ -77,7 +77,7 @@ img::-moz-selection { background: transparent; }
 
 header.masthead { text-align: center; color: white; }
 
-.header-video { position: absolute; top: 50%; left: 50%; height: 100%; width: 177.77777778vh; /* 100 * 16 / 9 */ min-width: 100%; min-height: 56.25vw; /* 100 * 9 / 16 */ z-index: 0; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); }
+header.masthead .header-video { position: absolute; top: 50%; left: 50%; height: 100%; width: 177.77777778vh; /* 100 * 16 / 9 */ min-width: 100%; min-height: 56.25vw; /* 100 * 9 / 16 */ z-index: -1; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); overflow-x: hidden; }
 
 @media (max-width: 991px) { header.masthead .header-video { position: absolute; top: 35%; min-width: 130%; width: 70%; } }
 
