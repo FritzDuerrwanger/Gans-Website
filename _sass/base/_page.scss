@@ -1,12 +1,41 @@
+
 // Global styling for this template
 body {
   overflow-x: hidden;
   //overflow-y: hidden;
   @include body-font;
 }
-
 p {
   line-height: 1.75;
+}
+
+ul {
+  margin-left: 0;
+  padding: 8px;
+}
+.rewe-vertrieb{
+  li{
+    padding-bottom: 5px;
+  }
+  li:before {
+    content: "\f0a9"; /* FontAwesome Unicode */
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    display: inline-block;
+    margin-left: -1.3em; /* same as padding-left set on li */
+    //width: 1.3em; /* same as padding-left set on li */
+  }
+  li:hover:before {
+    color: #AA8A22;
+  }
+  a {
+    color: $primary;
+    &:hover {
+      color: #343a40 !important;
+      text-decoration: none;
+    }
+  }
 }
 
 a {
