@@ -3,3 +3,40 @@
   margin: 15px 0;
   text-transform: none;
 }
+  .mobile-container{
+    display: none;
+  }
+  .mobile-gans {
+    display: none;
+  }
+@media (max-width: 991px) {
+  .mobile-gans {
+    display: block;
+  }
+  #gans{
+    padding-top: 14rem!important;
+    -webkit-animation-duration: 9s!important;
+  }
+}
+@media (max-width: 600px) {
+  .mobile-container {
+    display: block;
+  }
+  .desktop-container{
+    display: none;
+  }
+  .mobile-text {
+    margin: 5px;
+    font-size: larger;
+    font-weight: bold;
+    color: darkslategrey;
+  }
+  .mobile-gans {
+    display: block;
+  }
+
+  #gans{
+    padding-top: 15rem!important;
+    -webkit-animation-duration: 9s!important;
+  }
+}

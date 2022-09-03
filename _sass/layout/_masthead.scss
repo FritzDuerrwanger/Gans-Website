@@ -60,7 +60,6 @@ header.masthead {
     transform: translateX(-50%) translateY(-50%);
     overflow-x: hidden;
     overflow-y: hidden;
-    overflow: hidden;
   }
 }
 
@@ -80,73 +79,29 @@ header.masthead {
   @media (max-width: 768px) {
     header.masthead {
       .intro-text {
-        padding-top: 110px;
+        padding-top: 130px;
         padding-bottom: 60px;
       }
       .header-video {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        width: 50%;
+        display: none;
       }
+      background-image: url("../img/mobil-background.jpg");
+      background-repeat: no-repeat;
+      background-attachment: scroll;
+      background-position: center center;
+      background-size: cover;
     }
+    .img-fluid.animate__animated.animate__delay-1s.animate__fadeInUp {
+      width: 90%
+    }
+    .rewe-vertrieb {
+           font-size: 12pt;
+         }
+    .andere-vertrieb {
+          font-size: 12pt;
+          }
   }
 
-  @media (max-width: 630px) {
-header.masthead {
-      .header-video {
-        position: absolute;
-        top: 30%;
-        left: 50%;
-        min-width: 111%;
-        min-height: 100%;
-        width: 50%;
-      }
-    }
-}
-    @media (max-width: 576px) {
-header.masthead {
-        .header-video {
-          position: absolute;
-          top: 30%;
-          left: 50%;
-          min-width: 120%;
-          min-height: 100%;
-          width: 50%;
-        }
-      }
-}
-@media (max-width: 486px) {
-header.masthead {
-    .header-video {
-      position: absolute;
-      top: 25%;
-      left: 50%;
-      min-width: 130%;
-      min-height: 100%;
-      width: 50%;
-    }
-  }
-}
-
-@media (max-width: 330px) {
-header.masthead {
-    .header-video {
-      top: 23%;
-      min-width: 140%;
-      min-height: 100%;
-    }
-  }
-}
-@media (max-width: 330px) {
-header.masthead {
-    .header-video {
-      top: 20%;
-    }
-  }
-}
 
 @media (min-width: 768px) {
   header.masthead {

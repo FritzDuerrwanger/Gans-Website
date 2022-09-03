@@ -3,7 +3,7 @@ body { overflow-x: hidden; font-family: -apple-system, BlinkMacSystemFont, "Sego
 
 p { line-height: 1.75; }
 
-ul { margin-left: 0; padding: 8px; }
+ul { margin-left: 10px; padding: 0; }
 
 .rewe-vertrieb li { padding-bottom: 5px; }
 
@@ -89,21 +89,11 @@ img::-moz-selection { background: transparent; }
 
 header.masthead { text-align: center; color: white; }
 
-header.masthead .header-video { position: absolute; top: 50%; left: 50%; height: 100%; width: 177.77777778vh; /* 100 * 16 / 9 */ min-width: 100%; min-height: 56.25vw; /* 100 * 9 / 16 */ z-index: -1; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); overflow-x: hidden; overflow-y: hidden; overflow: hidden; }
+header.masthead .header-video { position: absolute; top: 50%; left: 50%; height: 100%; width: 177.77777778vh; /* 100 * 16 / 9 */ min-width: 100%; min-height: 56.25vw; /* 100 * 9 / 16 */ z-index: -1; -ms-transform: translateX(-50%) translateY(-50%); -moz-transform: translateX(-50%) translateY(-50%); -webkit-transform: translateX(-50%) translateY(-50%); transform: translateX(-50%) translateY(-50%); overflow-x: hidden; overflow-y: hidden; }
 
 @media (max-width: 991px) { header.masthead .header-video { position: absolute; top: 35%; min-width: 130%; width: 70%; } }
 
-@media (max-width: 768px) { header.masthead .intro-text { padding-top: 110px; padding-bottom: 60px; } header.masthead .header-video { position: absolute; top: 30%; left: 50%; min-width: 100%; min-height: 100%; width: 50%; } }
-
-@media (max-width: 630px) { header.masthead .header-video { position: absolute; top: 30%; left: 50%; min-width: 111%; min-height: 100%; width: 50%; } }
-
-@media (max-width: 576px) { header.masthead .header-video { position: absolute; top: 30%; left: 50%; min-width: 120%; min-height: 100%; width: 50%; } }
-
-@media (max-width: 486px) { header.masthead .header-video { position: absolute; top: 25%; left: 50%; min-width: 130%; min-height: 100%; width: 50%; } }
-
-@media (max-width: 330px) { header.masthead .header-video { top: 23%; min-width: 140%; min-height: 100%; } }
-
-@media (max-width: 330px) { header.masthead .header-video { top: 20%; } }
+@media (max-width: 768px) { header.masthead { background-image: url("../img/mobil-background.jpg"); background-repeat: no-repeat; background-attachment: scroll; background-position: center center; background-size: cover; } header.masthead .intro-text { padding-top: 130px; padding-bottom: 60px; } header.masthead .header-video { display: none; } .img-fluid.animate__animated.animate__delay-1s.animate__fadeInUp { width: 90%; } .rewe-vertrieb { font-size: 12pt; } .andere-vertrieb { font-size: 12pt; } }
 
 @media (min-width: 768px) { header.masthead .intro-text { padding-top: 130px; padding-bottom: 60px; } header.masthead .intro-text .intro-lead-in { font-size: 40px; font-style: italic; line-height: 40px; margin-bottom: 25px; font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; } header.masthead .intro-text .intro-heading { font-size: 75px; font-weight: 700; line-height: 75px; margin-bottom: 50px; font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; } }
 
@@ -112,6 +102,24 @@ header.masthead .header-video { position: absolute; top: 50%; left: 50%; height:
 .andere-vertrieb { text-align: left; display: inline-block; }
 
 .service-heading { margin: 15px 0; text-transform: none; }
+
+.mobile-container { display: none; }
+
+.mobile-gans { display: none; }
+
+@media (max-width: 991px) { .mobile-gans { display: block; } #gans { padding-top: 14rem !important; -webkit-animation-duration: 9s !important; } }
+
+@media (max-width: 600px) { .mobile-container { display: block; } .desktop-container { display: none; } .mobile-text { margin: 5px; font-size: larger; font-weight: bold; color: darkslategrey; } .mobile-gans { display: block; } #gans { padding-top: 15rem !important; -webkit-animation-duration: 9s !important; } }
+
+#gans { padding-top: 9rem; position: absolute; -webkit-animation: linear infinite; -webkit-animation-name: run; -webkit-animation-duration: 15s; }
+
+@-webkit-keyframes run { 0% { right: 0; }
+  48% { -webkit-transform: rotateY(0deg); }
+  50% { right: calc(100% - 100px);
+    -webkit-transform: rotateY(180deg); }
+  98% { -webkit-transform: rotateY(180deg); }
+  100% { right: 0;
+    -webkit-transform: rotateY(0deg); } }
 
 .timeline { position: relative; padding: 0; list-style: none; }
 
