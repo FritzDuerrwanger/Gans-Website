@@ -1,4 +1,4 @@
 ---
 layout: danke
-title: danke
+title: Danke
 ---

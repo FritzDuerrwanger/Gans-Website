@@ -37,6 +37,26 @@
     }
   }
 }
+@media (max-width: 991px) {
+  #mainNav {
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    .navbar-brand {
+      display: none;
+      font-size: 1.75em;
+  }
+&.navbar-shrink {
+
+  .navbar-brand {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    display: contents;
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+}
+}
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 25px;
@@ -65,6 +85,9 @@
       padding-top: 0;
       padding-bottom: 0;
       background-color: #D4AF37;
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25)!important;
+    	-webkit-transition : all 0.3s ease-out;
+    	transition : all 0.3s ease-out;
       .navbar-brand {
         display: block;
         font-size: 1.25em;
