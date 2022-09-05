@@ -11,11 +11,12 @@
 .btn-outline-primary:hover {
   background-color: $gg-1;
   border-color: $gg-1;
+  color: white;
 }
 
-.btn-outline-primary:active:focus:hover {
-  background-color: $gg-1;
-  border-color: $gg-1;
+.btn-outline-primary:active {
+  background-color: darken($gg-1, 7.5%);
+  border-color: darken($gg-1, 7.5%);
 }
 
 .btn-outline-primary {

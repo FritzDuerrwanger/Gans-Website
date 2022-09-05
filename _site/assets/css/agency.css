@@ -43,9 +43,9 @@ img::-moz-selection { background: transparent; }
 
 .btn-xl { font-size: 18px; padding: 20px 40px; }
 
-.btn-outline-primary:hover { background-color: #D4AF37; border-color: #D4AF37; }
+.btn-outline-primary:hover { background-color: #D4AF37; border-color: #D4AF37; color: white; }
 
-.btn-outline-primary:active:focus:hover { background-color: #D4AF37; border-color: #D4AF37; }
+.btn-outline-primary:active { background-color: #bc9928; border-color: #bc9928; }
 
 .btn-outline-primary { border-color: #D4AF37; color: #D4AF37; }
 

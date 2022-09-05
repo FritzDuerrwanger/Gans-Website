@@ -8,12 +8,12 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
-	  var url = "https://formspree.io/" + "brauerei@goldene-gans.de";
+	  var url = "https://formsubmit.co/ajax/" + "183ae3e652fff77c8a6988ad470cf06c";
       var name = $("input#name").val();
       var email = $("input#email").val();
-      var phone = $("input#phone").val();
+      var vorname = $("input#vorname").val();
       var message = $("textarea#message").val();
-      var firstName = name; // For Success/Failure Message
+      var firstName = vorname; // For Success/Failure Message
       // Check for white space in name for Success/Fail message
       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ');
@@ -23,12 +23,13 @@ $(function() {
       $.ajax({
         url: url,
         type: "POST",
-	dataType: "json",
-        data: {
-          name: name,
-          phone: phone,
-          email: email,
-          message: message
+	        dataType: "json",
+          data: {
+          _subject: "Neue Kontaktanfrage",
+          Vorname: vorname,
+          Name: name,
+          Email: email,
+          Nachricht: message
         },
         cache: false,
 
@@ -50,7 +51,7 @@ $(function() {
           $('#success').html("<div class='alert alert-danger'>");
           $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
             .append("</button>");
-          $('#success > .alert-danger').append($("<strong>").text("Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!"));
+          $('#success > .alert-danger').append($("<strong>").text("Enstchuldigen Sie " + firstName + ", unser E-Mail-Server reagiert nicht. Versuchen sie es später noch einmal."));
           $('#success > .alert-danger').append('</div>');
           //clear all fields
           $('#contactForm').trigger("reset");
