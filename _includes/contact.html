@@ -11,7 +11,6 @@
     <div class="row">
       <div class="col-lg-12">
         <form action="https://formsubmit.co/183ae3e652fff77c8a6988ad470cf06c" method="POST">
-          <input type="hidden" name="_next" value="https://goldene-gans.de/danke">
           <input type="hidden" name="_subject" value="Neue Kontaktanfrage!">
           <input type="hidden" name="_captcha" value="false">
           <!--name="sentMessage"-->
@@ -51,6 +50,7 @@
             <div class="col-lg-12 text-center">
               <button class="btn btn-outline-primary"
                 type="submit">{{ site.data.sitetext[site.locale].contact.submit | default: "Send Message" }}</button>
+                <input type="hidden" name="_next" value="https://goldene-gans.de/danke">
             </div>
           </div>
         </form>
