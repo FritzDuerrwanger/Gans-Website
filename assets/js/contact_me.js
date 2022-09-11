@@ -10,7 +10,7 @@ $(function() {
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
       // get values from FORM
-	  var url = "https://formsubmit.co/" + "183ae3e652fff77c8a6988ad470cf06c";
+	  var url = "https:///" + "";
       var name = $("input#name").val();
       var email = $("input#email").val();
       var vorname = $("input#vorname").val();
