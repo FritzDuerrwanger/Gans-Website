@@ -18,6 +18,13 @@
     -webkit-animation-duration: 9s!important;
   }
 }
+.page-section {
+  text-align: center;
+}
+.desktop-container{
+  display: inline-block;
+}
+
 @media (max-width: 600px) {
   .mobile-container {
     display: block;

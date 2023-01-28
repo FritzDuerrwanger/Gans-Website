@@ -111,13 +111,17 @@ header.masthead .header-video { position: absolute; top: 50%; left: 50%; height:
 
 @media (max-width: 991px) { .mobile-gans { display: block; } #gans { padding-top: 14rem !important; -webkit-animation-duration: 9s !important; } }
 
+.page-section { text-align: center; }
+
+.desktop-container { display: inline-block; }
+
 @media (max-width: 600px) { .mobile-container { display: block; } .desktop-container { display: none; } .mobile-text { margin: 5px; font-size: larger; font-weight: bold; color: darkslategrey; } .mobile-gans { display: block; } #gans { padding-top: 15rem !important; -webkit-animation-duration: 9s !important; } }
 
 #gans { padding-top: 9rem; position: absolute; -webkit-animation: ease-in-out infinite; -webkit-animation-name: run; -webkit-animation-duration: 15s; }
 
 @-webkit-keyframes run { 0% { right: 0; }
   48% { -webkit-transform: rotateY(0deg); }
-  50% { right: calc(100% - 200px);
+  50% { right: calc(100% - 190px);
     -webkit-transform: rotateY(180deg); }
   98% { -webkit-transform: rotateY(180deg); }
   100% { right: 0;
