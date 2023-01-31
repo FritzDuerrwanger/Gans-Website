@@ -113,6 +113,10 @@ header.masthead .header-video { position: absolute; top: 50%; left: 50%; height:
 
 .page-section { text-align: center; }
 
+.row { position: relative; }
+
+.gans-container { margin: 15px 0; }
+
 .desktop-container { display: inline-block; }
 
 @media (max-width: 600px) { .mobile-container { display: block; } .desktop-container { display: none; } .mobile-text { margin: 5px; font-size: larger; font-weight: bold; color: darkslategrey; } .mobile-gans { display: block; } #gans { padding-top: 15rem !important; -webkit-animation-duration: 9s !important; } }
@@ -121,7 +125,7 @@ header.masthead .header-video { position: absolute; top: 50%; left: 50%; height:
 
 @-webkit-keyframes run { 0% { right: 0; }
   48% { -webkit-transform: rotateY(0deg); }
-  50% { right: calc(100% - 190px);
+  50% { right: calc(100% - 200px);
     -webkit-transform: rotateY(180deg); }
   98% { -webkit-transform: rotateY(180deg); }
   100% { right: 0;
