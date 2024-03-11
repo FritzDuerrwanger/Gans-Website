@@ -474,7 +474,7 @@ Im Folgenden erklären wir, was Cookies sind und warum Sie genutzt werden, damit
 <h3 class="adsimple-312741573">Rechtsgrundlage</h3>
 <p>Die Rechtmäßigkeit der Verarbeitung personenbezogener Daten im Rahmen des Webhosting ergibt sich aus Art. 6 Abs. 1 lit. f DSGVO (Wahrung der berechtigten Interessen), denn die Nutzung von professionellem Hosting bei einem Provider ist notwendig, um das Unternehmen im Internet sicher und nutzerfreundlich präsentieren und Angriffe und Forderungen hieraus gegebenenfalls verfolgen zu können.</p>
 <p>Zwischen uns und dem Hosting-Provider besteht in der Regel ein Vertrag über die Auftragsverarbeitung gemäß Art. 28 f. DSGVO, der die Einhaltung von Datenschutz gewährleistet und Datensicherheit garantiert.</p>
-<h2 id="1und1-ionos-datenschutzerklaerung" class="adsimple-312741573">1&amp;1 IONOS Webhosting Datenschutzerklärung</h2>
+<h2 id="1und1-ionos-datenschutzerklaerung" class="adsimple-312741573">Github Pages Datenschutzerklärung</h2>
 <table border="1" cellpadding="15">
 <tbody>
 <tr>
