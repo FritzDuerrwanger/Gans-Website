@@ -7,5 +7,3 @@ gemspec
 gem "webrick", "~> 1.7"
 gem 'jekyll-seo-tag'
 gem 'jekyll-sitemap'
-gem 'addressable', '~> 2.8.0'
-gem 'faraday-retry', '~> 2.2'

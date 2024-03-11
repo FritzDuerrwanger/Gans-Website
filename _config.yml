@@ -6,7 +6,7 @@ tagline    : "- Augsburgs älteste Brauerei"
 email      : brauerei@goldene-gans.de #this is also the email contact forms will go to
 description: "Willkommen auf unserer Website | Hier können sie unsere Biere bestellen oder unsere Vertriebspartner finden"
 author     : Fritz Dürrwanger
-logo: yes  #optional, defaults to site title
+logo: logo.png  #optional, defaults to site title
 logo-path: assets\img\logo.png
 logo-height: 70 #height in px, defaults to 52px
 
