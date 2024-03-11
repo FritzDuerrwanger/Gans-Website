@@ -12,6 +12,7 @@ logo-height: 70 #height in px, defaults to 52px
 
 locale: "de" # See available languages in _data/sitetext.yml
 
+include: [".well-known"]
 
 plugins:
   - jekyll-seo-tag
