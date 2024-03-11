@@ -39,14 +39,32 @@
 }
 @media (max-width: 991px) {
   #mainNav {
-    box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
     .navbar-brand {
-      display: none;
-      font-size: 1.75em;
-  }
+      opacity: 0;
+      transition: opacity 0.1s ease;
+    }
 &.navbar-shrink {
+  background-color: #D4AF37;
+      box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25)!important;
+    	-webkit-transition : all 0.3s ease-out;
+    	transition : all 0.3s ease-out;
 
   .navbar-brand {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    display: contents;
+    font-size: 1.25em;
+    padding: 12px 0;
+    opacity: 1;
+  }
+
+  .ec-cart-widget {
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -73,6 +91,13 @@
       -moz-transition: all 0.3s;
       transition: all 0.3s;
     }
+    .ec-cart-widget {
+      display: none;
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
     .navbar-nav {
     margin-right: auto;
       .nav-item {
@@ -89,6 +114,11 @@
     	-webkit-transition : all 0.3s ease-out;
     	transition : all 0.3s ease-out;
       .navbar-brand {
+        display: block;
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+      .ec-cart-widget {
         display: block;
         font-size: 1.25em;
         padding: 12px 0;
