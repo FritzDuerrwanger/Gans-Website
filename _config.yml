@@ -2,6 +2,7 @@ url    : "" # the base hostname & protocol for your site, e.g. http://example.co
 baseurl: "" # the subpath of your site, e.g. /blog
 
 title      : Brauerei Goldene Gans
+tagline    : "- Augsburgs älteste Brauerei"
 email      : brauerei@goldene-gans.de #this is also the email contact forms will go to
 description: "Willkommen auf unserer Website | Hier können sie unsere Biere bestellen oder unsere Vertriebspartner finden"
 author     : Fritz Dürrwanger
@@ -10,6 +11,10 @@ logo-path: assets\img\logo.png
 logo-height: 70 #height in px, defaults to 52px
 
 locale: "de" # See available languages in _data/sitetext.yml
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 analytics:
   google: #Google Analytics tracking code here

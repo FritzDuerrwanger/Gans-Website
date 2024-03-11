@@ -1,0 +1,64 @@
+I"�<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    p {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Widerrufserklärung</h1>
+
+<div>
+    <h2>Widerrufsempfänger</h2>
+    <p>
+        Brauerei Goldene Gans KG<br />
+        Ostrachstraße 4A<br />
+        86165 Augsburg<br />
+        Deutschland<br />
+        <a href="mailto:brauerei@goldene-gans.de">brauerei@goldene-gans.de</a><br />
+        [Fax]
+    </p>
+
+    <h2>Widerrufsinhalt</h2>
+    <p>
+        Hiermit widerrufe(n) ich/wir den von mir/uns abgeschlossenen Vertrag<br />
+        über den Kauf der folgenden Waren:<br />
+        [genaue Beschreibung der zu widerrufenen Waren / Dienstleistung]<br />
+        erhalten am: [Liefer-/ Leistungsdatum]
+    </p>
+
+    <h2>Verbraucher</h2>
+    <p>
+        [Anrede]<br />
+        [Vorname] [Nachname]<br />
+        [Straße + Nummer]<br />
+        [PLZ + Ort]<br />
+        [Land]<br />
+        [E-Mail]
+    </p>
+
+    <p>Datum des Widerrufs: [Datum des Widerruf]</p>
+    <p>_____________________<br />Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier)</p>
+</div>
+
+</body>
+</html>
+:ET
