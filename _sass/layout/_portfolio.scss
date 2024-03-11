@@ -29,6 +29,10 @@
 max-width: 70vw !important;
 margin-left: auto !important;
 margin-right: auto !important;
+
+@media (max-width: 750px) {
+  max-width: 90vw !important;
+}
 }
 
 .modal {
