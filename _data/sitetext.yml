@@ -20,7 +20,7 @@ de: &DEFAULT_DE
     section: work-beer
 
   portfolio:
-    section: bestellen
+    section: shop
 
   timeline:
     section: craft-beer

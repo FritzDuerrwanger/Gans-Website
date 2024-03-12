@@ -8,7 +8,7 @@ de: &DEFAULT_DE
       section: craft-beer
     - title: "Vertriebspartner"
       section: vertriebspartner
-    - title: "Bestellen"
-      section: bestellen
+    - title: "Shop"
+      section: shop
     - title: "Kontakt"
       section: kontakt
