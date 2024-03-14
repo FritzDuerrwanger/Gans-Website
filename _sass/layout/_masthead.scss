@@ -37,7 +37,7 @@
 header.masthead {
   text-align: center;
   color: white;
-
+  position: relative;
   //background-image: url("#{$header-image}");
   //background-repeat: no-repeat;
   //background-attachment: scroll;
@@ -46,14 +46,12 @@ header.masthead {
   }
 header.masthead {
   .header-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
+    position: absolute;
     top: 0;
-    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Change height to 100% to match container's height */
+    object-fit: cover;
     z-index: -1;
   }
 }
@@ -62,18 +60,29 @@ header.masthead {
   @media (max-width: 768px) {
     header.masthead {
       .intro-text {
-        padding-top: 130px;
-        padding-bottom: 60px;
+        padding-top: 106px;
+        padding-bottom: 106px;
       }
       .header-video {
         display: none;
       }
-      background-image: url("../img/mobil-background.jpg");
+      background-image: url("../img/mobil-background-2.jpg");
       background-repeat: no-repeat;
       background-attachment: scroll;
       background-position:  center center;
       background-size: cover;
     }
+    header.masthead::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (last parameter) for transparency */
+      z-index: 0; /* Ensure the filter is below other content */
+    }
+  
     .img-fluid.animate__animated.animate__delay-1s.animate__fadeInUp {
       width: 90%
     }
@@ -88,9 +97,17 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead {
+    .img-fluid.animate__animated.animate__delay-1s.animate__fadeInUp{
+      max-height: 70vh; /* Set max-height to 80% of the viewport height */
+      width: auto; /* Let the width adjust automatically */
+      max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+      height: auto; /* Reset height to auto to maintain aspect ratio */
+      transition: max-height 0.5s ease, width 0.5s ease; /* Smooth transitions for max-height and width */
+    }
     .intro-text {
-      padding-top: 130px;
-      padding-bottom: 60px;
+      padding-top: 123px;
+      padding-bottom: 123px;
+     
       .intro-lead-in {
         font-size: 40px;
         font-style: italic;
@@ -105,6 +122,16 @@ header.masthead {
         margin-bottom: 50px;
         @include heading-font;
       }
+    }
+    header.masthead::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (last parameter) for transparency */
+      z-index: 1; /* Ensure the filter is below other content */
     }
   }
 }
