@@ -91,11 +91,11 @@ img::-moz-selection { background: transparent; }
 
 header.masthead { text-align: center; color: white; position: relative; }
 
-header.masthead .header-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; /* Change height to 100% to match container's height */ object-fit: cover; z-index: -1; }
+header.masthead .header-video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; /* Change height to 100% to match container's height */ object-fit: cover; z-index: 0; }
 
 @media (max-width: 768px) { header.masthead { background-image: url("../img/mobil-background-2.jpg"); background-repeat: no-repeat; background-attachment: scroll; background-position: center center; background-size: cover; } header.masthead .intro-text { padding-top: 106px; padding-bottom: 106px; } header.masthead .header-video { display: none; } header.masthead::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (last parameter) for transparency */ z-index: 0; /* Ensure the filter is below other content */ } .img-fluid.animate__animated.animate__delay-1s.animate__fadeInUp { width: 90%; } .rewe-vertrieb { font-size: 12pt; } .andere-vertrieb { font-size: 12pt; } }
 
-@media (min-width: 768px) { header.masthead .img-fluid.animate__animated.animate__delay-1s.animate__fadeInUp { max-height: 70vh; /* Set max-height to 80% of the viewport height */ width: auto; /* Let the width adjust automatically */ max-width: 100%; /* Ensure the image doesn't exceed its container's width */ height: auto; /* Reset height to auto to maintain aspect ratio */ transition: max-height 0.5s ease, width 0.5s ease; /* Smooth transitions for max-height and width */ } header.masthead .intro-text { padding-top: 123px; padding-bottom: 123px; } header.masthead .intro-text .intro-lead-in { font-size: 40px; font-style: italic; line-height: 40px; margin-bottom: 25px; font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; } header.masthead .intro-text .intro-heading { font-size: 75px; font-weight: 700; line-height: 75px; margin-bottom: 50px; font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; } header.masthead header.masthead::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.3); /* Adjust the alpha value (last parameter) for transparency */ z-index: 1; /* Ensure the filter is below other content */ } }
+@media (min-width: 768px) { header.masthead .img-fluid.animate__animated.animate__delay-1s.animate__fadeInUp { max-height: 70vh; /* Set max-height to 80% of the viewport height */ width: auto; /* Let the width adjust automatically */ max-width: 100%; /* Ensure the image doesn't exceed its container's width */ height: auto; /* Reset height to auto to maintain aspect ratio */ transition: max-height 0.5s ease, width 0.5s ease; /* Smooth transitions for max-height and width */ } header.masthead .intro-text { padding-top: 123px; padding-bottom: 123px; } header.masthead .intro-text .intro-lead-in { font-size: 40px; font-style: italic; line-height: 40px; margin-bottom: 25px; font-family: "Droid Serif", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; } header.masthead .intro-text .intro-heading { font-size: 75px; font-weight: 700; line-height: 75px; margin-bottom: 50px; font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; } }
 
 .rewe-vertrieb { text-align: left; display: inline-block; }
 
@@ -253,5 +253,12 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 /* roboto-slab-700 - latin */
 @font-face { font-family: 'Roboto Slab'; font-style: normal; font-weight: 700; src: url("../fonts/roboto-slab-v24-latin-700.eot"); /* IE9 Compat Modes */ src: local(""), url("../fonts/roboto-slab-v24-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-slab-v24-latin-700.woff2") format("woff2"), url("../fonts/roboto-slab-v24-latin-700.woff") format("woff"), url("../fonts/roboto-slab-v24-latin-700.ttf") format("truetype"), url("../fonts/roboto-slab-v24-latin-700.svg#RobotoSlab") format("svg"); /* Legacy iOS */ }
+
+.spinner { border: 2px solid transparent; /* Change border color to transparent */ border-left-color: #fff; /* Change left border color to match button's background color */ border-radius: 50%; width: 13px; height: 13px; animation: spin 1s linear infinite; display: none; }
+
+@keyframes spin { 0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); } }
+
+.btn-outline-primary:disabled { background-color: #d4af34 !important; border-color: #d4af34 !important; color: white !important; }
 
 /*# sourceMappingURL=agency.css.map */
